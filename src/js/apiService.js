@@ -28,6 +28,6 @@ export default {
   },
 
   set query(value) {
-    return (this.seqrchQuery = value);
+    this.seqrchQuery = value;
   },
 };

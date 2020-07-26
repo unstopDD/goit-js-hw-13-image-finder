@@ -40,6 +40,9 @@ function fetchArticles() {
         top: document.documentElement.offsetHeight,
         behavior: 'smooth',
       });
+      if (pictures.length < 12) {
+        refs.LoadMoreBtn.classList.add('is-hidden');
+      }
     })
     .finally(() => {
       refs.spinner.classList.add('is-hidden');
